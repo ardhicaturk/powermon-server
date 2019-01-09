@@ -48,9 +48,9 @@ function insertDB(d, tegangan, arus, daya, chy, kondisi){
 	var now = new Date();
 	var date = dateFormat(now, "yyyy-mm-dd HH:MM:ss");
 	if(d == 0){
-		sql= "INSERT INTO "solar" (time,tegangan,arus,daya,cahaya,kondisi) VALUES ('"+date+"','"+tegangan+"','"+arus+"','"+daya+"','"+chy+"','"+kondisi+"')";
+		sql= "INSERT INTO 'solar' (time,tegangan,arus,daya,cahaya,kondisi) VALUES ('"+date+"','"+tegangan+"','"+arus+"','"+daya+"','"+chy+"','"+kondisi+"')";
 	} else {
-		sql= "INSERT INTO "wt" (time,tegangan,arus,daya,rpm,kondisi) VALUES ('"+date+"','"+tegangan+"','"+arus+"','"+daya+"','"+chy+"','"+kondisi+"')";
+		sql= "INSERT INTO 'wt' (time,tegangan,arus,daya,rpm,kondisi) VALUES ('"+date+"','"+tegangan+"','"+arus+"','"+daya+"','"+chy+"','"+kondisi+"')";
 	}
 	con.query(sql, function (err, result) {
 		if (err) throw err;
