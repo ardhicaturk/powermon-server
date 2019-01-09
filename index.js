@@ -19,10 +19,10 @@ var cahaya;
 var rpm;
 // ================================ >> DATABASE << ===========================================
 var con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "sulton"
+  host: "fdb24.awardspace.net",
+  user: "2929152_sulton",
+  password: "sulton123",
+  database: "2929152_sulton"
 });
 
 con.connect(function(err) {
