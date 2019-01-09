@@ -1,12 +1,16 @@
 {
-  "name": "nodetest2",
+  "name": "powermonitor-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "engines": {
+    "node": "10.x"
   },
-  "author": "me",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node index.js"
+  },
+  "author": "Ardhi",
   "license": "ISC",
   "dependencies": {
     "dateformat": "^3.0.3",
