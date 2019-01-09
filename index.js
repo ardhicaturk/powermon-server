@@ -159,7 +159,7 @@ app.get('/serial', function(req,res,next){
 function updateDBbyInterval(){
 	insertDB("pln", sense.tegangan[0], sense.arus[0], sense.tegangan[0] * sense.arus[0], datas[0]);
 	insertDB("genset", sense.tegangan[1], sense.arus[1], sense.tegangan[1] * sense.arus[1], datas[1]);
-	insertDB(sense.tegangan[3], sense.arus[3], sense.tegangan[3] * sense.arus[3], cahaya, datas[3]); // solar
+	//insertDB(sense.tegangan[3], sense.arus[3], sense.tegangan[3] * sense.arus[3], cahaya, datas[3]); // solar
 	insertDB("beban1", sense.tegangan[4], sense.arus[4], sense.tegangan[4] * sense.arus[4], datas[4]);
 	insertDB("beban2", sense.tegangan[5], sense.arus[5], sense.tegangan[5] * sense.arus[5], datas[5]);
 	insertDB("beban3", sense.tegangan[6], sense.arus[6], sense.tegangan[6] * sense.arus[6], datas[6]);
